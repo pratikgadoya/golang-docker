@@ -1,11 +1,11 @@
 version: '2'
 services:
   app:
-    image: chintan13/golang-errtracker
-    working_dir: /var/www/html/golang-errtracker
+    image: pratikgadoya/golang-err
+    # working_dir: /var/www/html/golang-errtracker
     restart: always
     volumes:
-      - ./:/var/www/html/golang-errtracker
+      # - ./:/var/www/html/golang-errtracker
       - gopathvolume:/root/.go
       # - ./postcommand.sh:/usr/local/bin/php-postcommand.sh
     environment:
